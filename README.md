@@ -10,7 +10,7 @@
 - objetivo, baseado em fatos e recomendações de mercado
 - ético: nunca promete aprovação automática, nunca incentiva omissão na DPS, reforça transparência e boa-fé.
 Para evitar alucinações, o Agente foi instruído a responder da seguinte forma: "Não encontrado dados na base de conhecimento para resposta, responda: “Não possuo esta informação; encaminharei você ao site do Bradesco Seguros - Clube de Vantagens redirecionamento direto para o link https://www.bradescoseguros.com.br/clientes ."
-Template: docs/prompts_grok_X.md
+Template: *docs/prompts_grok_X.md*
 
 # 2.Base de Conhecimento
 | Arquivo| Formato|	Descrição|
@@ -20,7 +20,7 @@ Template: docs/prompts_grok_X.md
 |`produtos_financeiros.json`| JSON | Produtos e serviços disponíveis para crescimento do Patrimônio Total |
 |`renda_idade_4.csv`| CSV | Necessário para cálculo de Cotação, Capital Segurado e Taxa de Esforço Ideal |
 |`transacoes.csv`| CSV	| Dados do Salário Mensal e Custos Mensais do cliente |
-Template: data/
+Template: *data/*
 
 # 3.Prompts do Agente
 # a)Prompts documentados que definem o comportamento do agente:
@@ -75,12 +75,12 @@ As seguradoras utilizam modelos atuariais e dados estatísticos de sinistros rea
 A cotação real depende do seu perfil completo (idade, renda, saúde etc.). Nunca omita informações na DPS, pois isso pode invalidar a apólice.Recomendações práticas ou próximos passos:
 Se quiser verificar como seu perfil atual (32 anos, renda mensal de R$ 5.000,00, perfil moderado e foco em reserva de emergência) influencia uma cotação de seguro de vida básico, posso orientar os próximos passos.Quer que eu explique algum ponto específico ou prefere não realizar uma simulação neste momento?Foi uma experiência rica com você e tenha um excelente dia e semana!
 # Template: docs/prompts_grok_X.docx  docs/segurado_bem_informado.doc
-# Template: data/
+Template: *data/*
 
 # 5.Avaliação e Métricas 
 Informou corretamente conforme aos dados e a base de conhecimento disponibilizada; e quando necessitou buscar conhecimento para solucionar a dúvida do usuário, direcionou o usuário ao site do Bradesco Seguros.
 Deploy com o streamlit obteve sucesso mas com a limitação do espaço de memória não foi realizado com o Ollama.
-Template: assets/
+Template: *assets/*
 
 # 6.Pitch
 
