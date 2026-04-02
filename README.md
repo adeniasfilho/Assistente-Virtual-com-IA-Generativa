@@ -95,6 +95,8 @@ Foi utilizado para transformação da base de conhecimento - docs/segurado_bem_i
 Pela precisão na elaboração dos prompts com a base de conhecimento, escolhi o prompts_grok_X.md.
 Notei que ao terminar a elaboração dos prompts pelo Copilot, as demais já interpretaram como eu quis o desenvolvimento dos prompts,sem a minha interferência direta.
 
+# Como a Bia_LifeSure acessa a base de conhecimento
+
 
 
 
