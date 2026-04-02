@@ -10,7 +10,7 @@
 - objetivo, baseado em fatos e recomendações de mercado
 - ético: nunca promete aprovação automática, nunca incentiva omissão na DPS, reforça transparência e boa-fé.
 Para evitar alucinações, o Agente foi instruído a responder da seguinte forma: "Não encontrado dados na base de conhecimento para resposta, responda: “Não possuo esta informação; encaminharei você ao site do Bradesco Seguros - Clube de Vantagens redirecionamento direto para o link https://www.bradescoseguros.com.br/clientes ."
-# Template: docs/prompts_grok_X.md
+Template: docs/prompts_grok_X.md
 
 # 2.Base de Conhecimento
 | Arquivo| Formato|	Descrição|
@@ -20,7 +20,7 @@ Para evitar alucinações, o Agente foi instruído a responder da seguinte forma
 |`produtos_financeiros.json`| JSON | Produtos e serviços disponíveis para crescimento do Patrimônio Total |
 |`renda_idade_4.csv`| CSV | Necessário para cálculo de Cotação, Capital Segurado e Taxa de Esforço Ideal |
 |`transacoes.csv`| CSV	| Dados do Salário Mensal e Custos Mensais do cliente |
-# Template: data/
+Template: data/
 
 # 3.Prompts do Agente
 # a)Prompts documentados que definem o comportamento do agente:
@@ -80,16 +80,20 @@ Se quiser verificar como seu perfil atual (32 anos, renda mensal de R$ 5.000,00,
 # 5.Avaliação e Métricas 
 Informou corretamente conforme aos dados e a base de conhecimento disponibilizada; e quando necessitou buscar conhecimento para solucionar a dúvida do usuário, direcionou o usuário ao site do Bradesco Seguros.
 Deploy com o streamlit obteve sucesso mas com a limitação do espaço de memória não foi realizado com o Ollama.
-# Template: assets/
+Template: assets/
 
 # 6.Pitch
 
 
 # Ferramentas utilizadas
-| Categoria      |          Ferramentas                           |                Finalidade                      |
-|----------------|------------------------------------------------|------------------------------------------------|
-| LLMs           | Gemini, Grok, Copilot, ChatGPT, Claude, Ollama | consulta, construção dos prompts e treinamento | 
-| Desenvolvimento| Streamlit, Google Colab, IntelliJ IDEA Community| deploy e desenvolvimento de código            |
+| Categoria      |          Ferramentas                            |                Finalidade                      |
+|----------------|-------------------------------------------------|------------------------------------------------|
+| LLMs           | Gemini, Grok, Copilot, ChatGPT, Claude, Ollama  | consulta, construção dos prompts e treinamento | 
+| Desenvolvimento| Streamlit, Google Colab, IntelliJ IDEA Community|  deploy e desenvolvimento de código            |
+
+Foi utilizado para transformação da base de conhecimento - docs/segurado_bem_informado -, as LLMs Grok,Copilot,Claude.ai e ChatGPT.
+Pela precisão na elaboração dos prompts com a base de conhecimento, escolhi o prompts_grok_X.md.
+Notei que ao terminar a elaboração dos prompts pelo Copilot, as demais já interpretaram como eu quis o desenvolvimento dos prompts,sem a minha interferência direta.
 
 
 
