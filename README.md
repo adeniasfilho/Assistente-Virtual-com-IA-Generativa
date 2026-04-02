@@ -96,9 +96,10 @@ Pela precisão na elaboração dos prompts com a base de conhecimento, escolhi o
 Notei que ao terminar a elaboração dos prompts pelo Copilot, as demais já interpretaram como eu quis o desenvolvimento dos prompts,sem a minha interferência direta.
 
 # Como a Bia_LifeSure acessa a base de conhecimento
-
-
-
+import json
+import pandas as pd
+import requests
+import streamlit as st 
 
 #Montar Contexto
 contexto=f"""
