@@ -100,6 +100,31 @@ Notei que ao terminar a elaboração dos prompts pelo Copilot, as demais já int
 
 
 
+#Montar Contexto
+contexto=f"""
+CLIENTE: {perfil_investidor['nome']}, {perfil_investidor['idade']} anos, perfil{perfil_investidor['perfil_investidor']}
+OBJETIVO: {perfil_investidor['objetivo_principal']}
+PATRIMONIO: R$ {perfil_investidor['patrimonio_total']} | RESERVA: R$ {perfil_investidor['reserva_emergencia_atual']}
+
+TRANSAÇÕES ANTERIORES:
+{transacoes.to_string(index=False)}
+
+ATENDIMENTOS ANTERIORES:
+{historico_atendimento.to_string(index=False)}
+
+RENDA IDADE:
+{renda_idade_4.to_string(index=False)}
+
+PRODUTOS DISPONÍVEIS:
+{json.dumps(produtos_financeiros, indent=2, ensure_ascii=False)}
+
+PERFIL INVESTIDOR:
+{json.dumps(perfil_investidor, indent=2, ensure_ascii=False)}
+"""
+
+
+
+
 
 
 
