@@ -91,7 +91,7 @@ Template: *assets/*
 | LLMs           | Gemini, Grok, Copilot, ChatGPT, Claude, Ollama  | consulta, construção dos prompts e treinamento | 
 | Desenvolvimento| Streamlit, Google Colab, IntelliJ IDEA Community|  deploy e desenvolvimento de código            |
 
-Foi utilizado para transformação da base de conhecimento - docs/segurado_bem_informado -, as LLMs Grok,Copilot,Claude.ai e ChatGPT.
+Foi utilizado para transformação da base de conhecimento - *docs/segurado_bem_informado* -, as LLMs Grok,Copilot,Claude.ai e ChatGPT.
 Pela precisão na elaboração dos prompts com a base de conhecimento, escolhi o prompts_grok_X.md.
 Notei que ao terminar a elaboração dos prompts pelo Copilot, as demais já interpretaram como eu quis o desenvolvimento dos prompts,sem a minha interferência direta.
 
